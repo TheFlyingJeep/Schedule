@@ -1,0 +1,25 @@
+* {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom right, rgb(65, 37, 102), rgb(23, 105, 23));
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
