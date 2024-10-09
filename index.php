@@ -3,17 +3,15 @@ require_once __DIR__ . '/autoload.php';
 
 use hw\src\classes\headers;
 use hw\src\classes\login;
+use hw\src\classes\files;
 
+//Maybe one day utilize the cache headers later (Separate file? Or conditonal function? idk I'll look into it once this shit is functional lmao)
 $headers = new headers();
 $headers->set_headers();
 $uuid = uniqid();
 
-echo "<link rel=\"stylesheet\" href=\"static/css/body.css?q=$uuid\">";
-echo "<link rel=\"stylesheet\" href=\"static/css/login.css?q=$uuid\">";
-echo "<link rel=\"stylesheet\" href=\"static/css/table.css?q=$uuid\">";
-echo "<script src=\"../../static/js/jquery.js?q=$uuid\"></script>";
-echo "<script src=\"static/js/login.js?q=$uuid\"></script>";
-echo "<script src=\"static/js/schedule.js?q=$uuid\"></script>";
+$files = new files();
+$files->load_files($uuid);
 
 $login = new login();
 $login->display_login();

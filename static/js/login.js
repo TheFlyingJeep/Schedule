@@ -9,6 +9,7 @@ jQuery(document).ready(function( $ ) {
             this.loginButton = $("#login");
             this.maintable.hide();
             this.failText.hide();
+            //Remember to replace this button with a clickable div just for better appearance
             this.loginButton.on("click", () => {
                 this.tryLogIn();
             });
@@ -23,7 +24,9 @@ jQuery(document).ready(function( $ ) {
                     if (success.success == "false") {
                         this.failText.show();
                     } else {
+                        //When correct login, simply hide the entire login div then change the background gradient
                         this.loginbox.hide();
+                        //Show the schedule div, but do no javascript to it until mentioned in the scheduleTable object from schedule.js
                         this.maintable.show();
                         $("body").css("background", "linear-gradient(to right, #eeeeee, #cacaca)");
                         $("body").css("animation", "bodyBackground 5s linear infinite");
