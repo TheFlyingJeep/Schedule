@@ -7,19 +7,13 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom right, rgb(65, 37, 102), rgb(23, 105, 23));
+    background: linear-gradient(to bottom right, rgb(166, 37, 37), rgb(127, 127, 15), rgb(23, 105, 23), rgb(47, 47, 101), rgb(83, 37, 83));
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 30s ease infinite;
-    animation: AnimationName 10s ease infinite;
+    animation: AnimationName 5s ease alternate infinite;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
 @keyframes AnimationName {
     0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    100%{background-position:100% 50%}
+    /* 100%{background-position:0% 50%} */
 }

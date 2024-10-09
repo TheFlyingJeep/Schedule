@@ -9,9 +9,9 @@ class database {
 
 
     public function __constructor() {
-        $json = file_get_contents("secrets.json") or die("Failed");
-        $json_data = json_decode($json, true);
-        $this->conn = new mysqli($json_data["domain"], $json_data["user"], $json_data["password"], $json_data["database"]);
+        $configs = include($_SERVER['DOCUMENT_ROOT'] . '/config.php');
+        $config = parse_ini_file($configs->server_root .  "/private/config.ini");
+        $this->conn = new mysqli($config["host"], $config["username"], $config["password"], $config["dbname"]);
         if ($conn->connect_error) {
             die("Failure to connect to database");
         }

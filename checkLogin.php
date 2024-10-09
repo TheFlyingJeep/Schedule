@@ -4,8 +4,8 @@ $password = isset($_POST["password"]) ? $_POST["password"] : null;
 $configs = include($_SERVER["DOCUMENT_ROOT"] . "/config.php");
 $schedule = parse_ini_file($configs->server_root . "/private/schedule.ini");
 if (($username != null && $username == $schedule["username"]) && ($password != null && $password == $schedule["password"])) {
-    return json_encode(["success"=>"true"]);
+    echo json_encode(["success"=>"true"]);
 } else {
-    return json_encode(["success"=>"false"]);
+    echo json_encode(["success"=>"false"]);
 }
 ?>
