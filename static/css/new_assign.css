@@ -1,0 +1,96 @@
+#newassignbackground {
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(80, 80, 80);
+    width: 100vw;
+    height: 100vh;
+    opacity: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newassigncontainer {
+    z-index: 5;
+    background-color: rgb(255,255,255,1);
+    width: 60%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 100%;
+}
+
+.assign_container {
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    height: 25%;
+    width: 100%;
+}
+
+#assignlabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    background-image: linear-gradient(to bottom right, rgb(31, 87, 31), rgb(145, 127, 40));
+    background-clip: text;
+    color: transparent;
+    text-shadow: 1px 0 10px rgb(165, 165, 165);
+}
+
+.assinputs {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#category {
+    width: 60%;
+    height: 20%;
+}
+
+#date {
+    width: 60%;
+    height: 20%;
+}
+
+#assignment {
+    width: 60%;
+    height: 20%;
+}
+
+.asslabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    color: rgb(105, 96, 42);
+    text-align: center;
+}
+
+.assbutton {
+    width: 35%;
+    height: 60%;
+    background-color: rgb(173, 173, 173);
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.assbutton:hover {
+    cursor: pointer;
+    background-color: rgb(111, 111, 111);
+    border: solid 1px rgb(72, 72, 72);
+}
+
+.buttonlabel {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3vw;
+    color: rgb(88, 79, 33);
+    text-align: center;
+}

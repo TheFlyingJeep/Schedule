@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
 }
 
 @keyframes bodyBackground {
@@ -21,7 +22,7 @@
 
 .scheduleheader {
     width: 100%;
-    height: 15%;
+    height: 10%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -32,7 +33,7 @@
 
 .scheduletitle {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 66px;
+    font-size: 4vw;
     background-color: rgb(109, 99, 45);
     background-image: linear-gradient(135deg, rgb(151, 138, 61),rgb(45, 59, 116));
     background-size: 100%;
@@ -40,7 +41,7 @@
     color: transparent;
 }
 
-#addbutton {
+#assignbutton {
     width: 30%;
     height: 60%;
     background-color: rgb(204, 204, 204);
@@ -51,14 +52,14 @@
     justify-content: center;
 }
 
-#addbutton:hover {
+#assignbutton:hover {
     background-color: rgb(170, 170, 170);
     cursor: pointer;
 }
 
 #addtext {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: black;
     text-shadow: 1px 1px 2px rgb(131, 131, 131);
 }
@@ -90,7 +91,7 @@
 
 .catlabel {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 3vw;
     color: rgb(61, 63, 40);
     text-shadow: 1px 1px 1px rgb(177, 177, 177);
 }

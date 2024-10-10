@@ -11,6 +11,7 @@ class login {
         echo file_get_contents("templates/table.html");
         //echo file_get_contents("templates/add_assignment.html");?
         //Or I can just edit schedule.html directly but either works (prob will just do direct html edit why not)
+        echo file_get_contents("templates/new_assign.html");
     }
 }
 
